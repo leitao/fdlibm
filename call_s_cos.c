@@ -15,5 +15,5 @@ int main(void)
  //printf("cosine of %d is: %f\n", itr, c);
  }
 
- printf("cosine total sum is: %.16g\n", t);
+ printf("cosine total sum is: %.17g\n", t);
 }
