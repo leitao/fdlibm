@@ -8,11 +8,12 @@ int main(void)
  double t = 0;
  double c;
 
- for (itr = 0; itr < 100000; itr++) {
+ for (itr = 1; itr < 10000000; itr++) {
    c  = jcos(itr);
+ //  printf("%d %g\n", itr, c);
    t += c;
  //printf("cosine of %d is: %f\n", itr, c);
  }
 
- printf("cosine total sum is: %f\n", t);
+ printf("cosine total sum is: %.16g\n", t);
 }
