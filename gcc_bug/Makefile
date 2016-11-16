@@ -1,5 +1,5 @@
-CFLAGS=-I. -g -static -O3
-FLAG=-fno-expensive-optimizations 
+CFLAGS=-I. -g -static -O1
+FLAG=-fexpensive-optimizations 
 
 %.o:	%.c
 	gcc $(CFLAGS) -c $< -o $@
