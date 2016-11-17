@@ -32,14 +32,11 @@
 #endif
 #include "jfdlibm.h"
 
-#define _LITTLE_ENDIAN
-#ifdef __NEWVALID       /* special setup for Sun test regime */
-#if defined(i386) || defined(i486) || \
-    defined(intel) || defined(x86) || defined(arm) || \
-    defined(i86pc) || defined(_M_IA64) || defined(ia64)
+
+#ifndef _LITTLE_ENDIAN
 #define _LITTLE_ENDIAN
 #endif
-#endif
+
 
 #ifdef _LITTLE_ENDIAN
 #define __HI(x) *(1+(int*)&x)
