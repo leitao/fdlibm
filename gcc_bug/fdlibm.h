@@ -32,6 +32,7 @@
 #endif
 #include "jfdlibm.h"
 
+#define _LITTLE_ENDIAN
 #ifdef __NEWVALID       /* special setup for Sun test regime */
 #if defined(i386) || defined(i486) || \
     defined(intel) || defined(x86) || defined(arm) || \
